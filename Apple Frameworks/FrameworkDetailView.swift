@@ -1,13 +1,15 @@
 import SwiftUI
 
-struct DetailScreen: View {
+struct FrameWorkDetailView: View {
     var framework: Framework
+    @Binding var isShowingDetailView: Bool
+
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 Button {
-
+                    isShowingDetailView = false
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(Color(.label))
@@ -37,7 +39,9 @@ struct DetailScreen: View {
 }
 
 struct DetailScreen_Previews: PreviewProvider {
+    @Binding var val: Bool
     static var previews: some View {
-        DetailScreen(framework: MockData.sampleFramework)
+        FrameWorkDetailView(framework: MockData.sampleFramework,
+                            isShowingDetailView: .constant(false))
     }
 }

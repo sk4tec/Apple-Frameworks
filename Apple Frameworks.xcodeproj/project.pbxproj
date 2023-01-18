@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB263BE3296C86EC00F8D4BB /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB263BE2296C86EC00F8D4BB /* DetailScreen.swift */; };
+		FB263BE3296C86EC00F8D4BB /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB263BE2296C86EC00F8D4BB /* FrameworkDetailView.swift */; };
 		FB263BE5296C9C2000F8D4BB /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB263BE4296C9C2000F8D4BB /* FrameworkTitleView.swift */; };
 		FB55E9532975E87A00FAFCDD /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55E9522975E87A00FAFCDD /* AFButton.swift */; };
 		FB55E9552975F19600FAFCDD /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55E9542975F19600FAFCDD /* FrameworkGridViewModel.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB263BE2296C86EC00F8D4BB /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		FB263BE2296C86EC00F8D4BB /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		FB263BE4296C9C2000F8D4BB /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		FB55E9522975E87A00FAFCDD /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		FB55E9542975F19600FAFCDD /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				FB7F7F7929686E5C0063F460 /* Apple_FrameworksApp.swift */,
 				FB7F7F892968722E0063F460 /* FrameworkGridView.swift */,
 				FB55E9542975F19600FAFCDD /* FrameworkGridViewModel.swift */,
-				FB263BE2296C86EC00F8D4BB /* DetailScreen.swift */,
+				FB263BE2296C86EC00F8D4BB /* FrameworkDetailView.swift */,
 				FB7F7F8729686F070063F460 /* Framework.swift */,
 				FB263BE4296C9C2000F8D4BB /* FrameworkTitleView.swift */,
 				FB7F7F7D29686E620063F460 /* Assets.xcassets */,
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB263BE5296C9C2000F8D4BB /* FrameworkTitleView.swift in Sources */,
-				FB263BE3296C86EC00F8D4BB /* DetailScreen.swift in Sources */,
+				FB263BE3296C86EC00F8D4BB /* FrameworkDetailView.swift in Sources */,
 				FB7F7F8A2968722E0063F460 /* FrameworkGridView.swift in Sources */,
 				FB7F7F8829686F070063F460 /* Framework.swift in Sources */,
 				FB55E9532975E87A00FAFCDD /* AFButton.swift in Sources */,

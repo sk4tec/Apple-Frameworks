@@ -1,10 +1,12 @@
 import SwiftUI
 
 final class FrameworkGridViewModel: ObservableObject {
-    var selectedFramework: Framework? {
+    public var selectedFramework: Framework? {
         didSet {
-            guard let framework = selectedFramework else { return }
-            print("you selected \(framework.name)")
+            isShowingDetailView = true
         }
     }
+
+
+    @Published var isShowingDetailView = false
 }
