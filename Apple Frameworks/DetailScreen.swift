@@ -1,28 +1,43 @@
 import SwiftUI
 
 struct DetailScreen: View {
+    var framework: Framework
     var body: some View {
         VStack {
-            FrameworkTitleView(framework: MockData.sampleFramework)
-                .padding(.top, 100)
+            HStack {
+                Spacer()
+                Button {
 
-            Text("fjdsolfdjsklfjdkslfjdsklfjdkslsfjklsdfjkldsjklfsdjklfdsjkldfsjkld ferwujiopfewjiofewjio fewjiofewjiofewjio fewjiofewjiofewjio fewjiofewjiofewjoi  fjeiwowfjewiofjewj0wiof ewd \n\r re2koprf234ekopferwopkfkewopfewkopfewkopfewopkfewkopfewopkfewjkopfewkoperwf few fewopkfewopkfewopk ewfopkfewopkfewkopfew fewkopewfopkfewopk few fewkopfewkop fewk opfewkopfewopk ewfopkfewopkewfopk ewpklewokeok ejkmelelejke")
-                .padding(.leading, 24)
-                .padding(.trailing, 24)
-            Spacer()
-            Button("Learn More") {
-                print("tapped learn more button")
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(Color(.label))
+                        .frame(width: 44, height: 44)
+                        .imageScale(.large)
+                }
             }
-            .frame(width:280, height: 50)
-            .background(.red)
-            .foregroundColor(.white)
-            .cornerRadius(15)
+            .padding()
+
+            Spacer()
+
+            FrameworkTitleView(framework: framework)
+            Text(framework.description)
+                .font(.body)
+                .padding()
+
+            Spacer()
+
+            Button {
+
+            } label: {
+                AFButton(title: "Learn More")
+            }
+
         }
     }
 }
 
 struct DetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        DetailScreen()
+        DetailScreen(framework: MockData.sampleFramework)
     }
 }
