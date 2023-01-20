@@ -3,6 +3,7 @@ import SwiftUI
 struct FrameWorkDetailView: View {
     var framework: Framework
     @Binding var isShowingDetailView: Bool
+    @State private var isShowingSafari: Bool = false
 
     var body: some View {
         VStack {
@@ -29,11 +30,13 @@ struct FrameWorkDetailView: View {
             Spacer()
 
             Button {
-
+                isShowingSafari = true
             } label: {
                 AFButton(title: "Learn More")
             }
-
+            .sheet(isPresented: $isShowingSafari) {
+                SafariView(url: URL(string: framework.urlString) ?? URL(string: "https://app.com")!)
+            }
         }
     }
 }
@@ -41,7 +44,6 @@ struct FrameWorkDetailView: View {
 struct DetailScreen_Previews: PreviewProvider {
     @Binding var val: Bool
     static var previews: some View {
-        FrameWorkDetailView(framework: MockData.sampleFramework,
-                            isShowingDetailView: .constant(false))
+        FrameWorkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))
     }
 }
