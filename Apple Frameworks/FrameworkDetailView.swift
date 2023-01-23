@@ -29,12 +29,9 @@ struct FrameWorkDetailView: View {
 
             Spacer()
 
-            Button {
-                isShowingSafari = true
-            } label: {
-                AFButton(title: "Learn More")
-            }
-            .sheet(isPresented: $isShowingSafari) {
+            AFDisssMissButton(isShowingSafari: isShowingSafari)
+
+            .fullScreenCover(isPresented: $isShowingSafari) {
                 SafariView(url: URL(string: framework.urlString) ?? URL(string: "https://app.com")!)
             }
         }
